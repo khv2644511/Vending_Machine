@@ -1,0 +1,241 @@
+button {
+	padding: 0;
+}
+
+body {
+	background-color: #EAE8FE;
+}
+
+.sr_out {
+	position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.container {
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	min-width: 720px;
+	/* flex-wrap: nowrap; */
+}
+
+.img_title {
+	display: block;
+	margin: 0 auto;
+	width: 386px;
+	height: 164px;
+}
+
+.japangi_left {
+	/* position: relative; */
+	padding: 31px 27px;
+	box-sizing: border-box;
+	width: 360px;
+	height: 545px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.japangi_right {
+	background-color: #fff;
+	width: 360px;
+	height: 545px;
+}
+
+.japangi_deposit {
+	background-color: aqua;
+	width: 360px;
+	height: 50px;
+}
+
+.get_drink {
+	width: 308px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h2 {
+	width: 76px;
+	margin: 0 auto;
+}
+.get_drink_list {
+	background-color: #EAE8FE;
+	
+	margin: 0 auto;
+}
+
+
+
+.japangi {
+	margin: 82.88px 9px 171px;
+	/* background-color:aqua; */
+}
+
+.list_drink {
+	/* position: absolute; */
+	left: 0;
+	right: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.drink {
+	position: relative;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 1px solid #cdcaca;
+	filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+
+.drink_img {
+margin-top: 10px;
+margin-bottom: 1px;
+}
+
+.drink_name {
+	font-weight: 500;
+	font-size: 9px;
+	line-height: 13px;
+	margin-bottom: 1px;
+}
+
+.price {
+	display: block;
+	margin: 4px auto;
+	padding: 7px 15px;
+	text-align: center;
+	box-sizing: border-box;
+	width: 70px;
+	height: 22px;
+	border-radius: 50px;
+	background-color: #6327FE;
+	color: #fff;
+	font-size: 12px;
+}
+
+.price::after {
+	content: "원";
+	color: #fff;
+}
+
+.calc {
+	/* position: absolute; */
+	left: 0;
+	top: 310px;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: repeat(2, 1fr) 3fr;
+	gap: 12px;
+	overflow: hidden;
+	height: 40%;
+	box-sizing: border-box;
+}
+
+.show_change {
+	/* width: 200px; */
+	/* height: 33px; */
+	background: #EAE8FE;
+	line-height: 33px;
+	text-align: right;
+}
+
+.show_change::before {
+	content: "잔액 :";
+	float: left;
+	margin-left: 10px;
+}
+
+.show_change::after {
+	/* position: absolute; */
+	content: "원";
+	float: right;
+	margin-right: 10px;	
+}
+
+.calc * {
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 14px;
+} 
+.calc :not(.show_change, .btn_get) {
+	border: 1px solid #cdcaca;
+}
+
+.button_chage {
+	background-color: #fff;
+	/* width: 94px; */
+	/* height: 33px; */
+}
+
+.input_money {
+	/* width: 200px; */
+	/* height: 33px; */
+}
+.input_money::placeholder {
+	content: "입금액 입력";
+	/* display: block; */
+	color: #cdcaca;
+	font-size: 13px;
+	font-weight: 500;
+	/* margin-left: 10px; */
+}
+
+.btn_get {
+	border: none;
+	background-color: #6327FE;
+	color: #fff;
+}
+
+.btn {
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bottom_list_drink {
+	position: relative;
+	box-sizing: border-box;
+	padding: 20px;
+	background-color: #EAE8FE;
+	overflow: overlay;
+}
+
+.selected_drink {
+	line-height: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	height: 46px;
+	background-color: #fff;
+	line-height: 46px;
+}
+
+
+
+
+/* 스크롤바 */
+.bottom_list_drink::-webkit-scrollbar {
+    width: 10px;
+  }
+  .bottom_list_drink::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+	height: 79px;
+
+  }
+  .bottom_list_drink::-webkit-scrollbar-track {
+    background-color: #EAE8FE;
+    border-radius: 10px;
+  }
+
+
+
+

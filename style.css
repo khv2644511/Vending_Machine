@@ -196,6 +196,8 @@ figcaption {
 	filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
 }
 
+
+
 .drink_img {
 margin-top: 10px;
 margin-bottom: 1px;
@@ -316,44 +318,3 @@ margin-bottom: 1px;
 	background-color: #fff;
 	line-height: 46px;
 }
-
-
-
-
-/* 스크롤바 */
-.bottom_list_drink::-webkit-scrollbar {
-    width: 10px;
-  }
-  .bottom_list_drink::-webkit-scrollbar-thumb {
-    background-color: #fff;
-    border-radius: 5px;
-    background-clip: padding-box;
-    border: 3px solid transparent;
-	height: 79px;
-
-  }
-  .bottom_list_drink::-webkit-scrollbar-track {
-    background-color: #EAE8FE;
-    border-radius: 10px;
-  }
-
-
-.get_drink::-webkit-scrollbar {
-    width: 7px;
-  }
-.get_drink::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 5px;
-    background-clip: padding-box;
-    border: 3px solid transparent;
-	/* height: 40%; */
-
-
-  }
-  .get_drink::-webkit-scrollbar-track {
-    background-color: #fff;
-    border-radius: 10px;
-	height: 100px;
-  }
-
-

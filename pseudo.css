@@ -1,0 +1,45 @@
+.drink:hover {
+	border: 1px solid #6327FE;
+	cursor: pointer;
+}
+
+button:hover {
+	border: 1px solid #6327FE;
+	cursor: pointer;
+}
+
+/* 스크롤바 */
+.bottom_list_drink::-webkit-scrollbar {
+    width: 10px;
+  }
+  .bottom_list_drink::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+	height: 79px;
+
+  }
+  .bottom_list_drink::-webkit-scrollbar-track {
+    background-color: #EAE8FE;
+    border-radius: 10px;
+  }
+
+
+.get_drink::-webkit-scrollbar {
+    width: 7px;
+  }
+.get_drink::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+	/* height: 40%; */
+
+
+  }
+  .get_drink::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 10px;
+	height: 100px;
+  }

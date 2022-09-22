@@ -4,6 +4,7 @@ button {
 
 body {
 	background-color: #EAE8FE;
+	font-size: 10px;
 }
 
 .sr_out {
@@ -17,21 +18,37 @@ body {
 
 .container {
 	display: flex;
+	position: relative;
 	/* flex-direction: column; */
+	/* flex-direction: row; */
 	justify-content: center;
-	min-width: 720px;
-	/* flex-wrap: nowrap; */
+	align-items: center;
+	margin: 0 auto;
+	box-sizing: border-box;
+	flex-wrap: wrap;
 }
 
 .img_title {
+	/* position: absolute; */
+	/* align-self:stretch; */
 	display: block;
 	margin: 0 auto;
+	left: 0;
+	right: 0;
 	width: 386px;
 	height: 164px;
+	flex-grow: 1;
+}
+
+.japangi {
+	flex-shrink: 0;
+	/* background-color:aqua; */
 }
 
 .japangi_left {
 	/* position: relative; */
+	margin: 0 18px;
+
 	padding: 31px 27px;
 	box-sizing: border-box;
 	width: 360px;
@@ -41,41 +58,124 @@ body {
 }
 
 .japangi_right {
+	/* margin: 0 18px; */
+	box-sizing: border-box;
 	background-color: #fff;
 	width: 360px;
 	height: 545px;
+	display: block;
+	background-color: #EAE8FE;
+	/* background-color: yellow; */
+	overflow: hidden;
+	position: relative;
 }
 
 .japangi_deposit {
-	background-color: aqua;
-	width: 360px;
+	border: 1px solid #fff;
+	right: 0;
+	background-color: #fff;
+	width: 100%;
 	height: 50px;
+	margin-bottom: 30px;
+	line-height: 32px;
+	padding: 9px 27px;
+	box-sizing: border-box;
+
+}
+.txt_deposit {
+	width: 306px;
+	height: 32px;
+	background-color: #EAE8FE;
+	border-radius: 5px;
+	float: left;
+	padding: 0 10px;
+	box-sizing: border-box;
 }
 
-.get_drink {
-	width: 308px;
+.deposit {
+	float: right;
+}
+
+.deposit::after {
+	content: "원";
+	display: inline-block;
+	/* margin: 0 5px; */
+}
+
+.get_drink_section {
+	box-sizing: border-box;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 	padding: 20px;
+	overflow: hidden;
+	background-color: #fff;
+	/* background-color: pink; */
+}
+
+.get_drink {
+	background-color: #EAE8FE;
+	margin: 0 auto;
+	padding: 20px;
+	/* height: 100%; */
+	border-radius: 5px;
+	vertical-align: middle;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.get_drink li {
+	margin: 0 auto;
+	width: 276px;
+	height: 46px;
+	background-color: #fff;
+}
+
+.get_drink li + li {
+	margin-top: 5px;
 }
 
 h2 {
 	width: 76px;
-	margin: 0 auto;
+	margin: 10px auto;
 }
+
 .get_drink_list {
-	background-color: #EAE8FE;
-	
-	margin: 0 auto;
+	position: relative;
+	height: 100%;
+	padding: 5px;
+	box-sizing: border-box;
 }
 
-
-
-.japangi {
-	margin: 82.88px 9px 171px;
-	/* background-color:aqua; */
+.btn_get_drink_count {
+	margin-top: 2px;
+	float: right;
+	box-sizing: border-box;
+	line-height: 100%;
+	width: 30px;
+	height: 30px;
+	/* left: 238px; */
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
+	background-color: #fff;
 }
 
+.get_drink_fig {
+	float: left;
+}
+
+.get_drink_img {
+	width: 20px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+figcaption {
+	display: inline;
+	font-size: 9px;
+}
+
+/* left */
 .list_drink {
 	/* position: absolute; */
 	left: 0;
@@ -204,7 +304,8 @@ margin-bottom: 1px;
 	box-sizing: border-box;
 	padding: 20px;
 	background-color: #EAE8FE;
-	overflow: overlay;
+	overflow: scroll;
+	overflow-x: hidden;
 }
 
 .selected_drink {
@@ -237,5 +338,22 @@ margin-bottom: 1px;
   }
 
 
+.get_drink::-webkit-scrollbar {
+    width: 7px;
+  }
+.get_drink::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+	/* height: 40%; */
+
+
+  }
+  .get_drink::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 10px;
+	height: 100px;
+  }
 
 

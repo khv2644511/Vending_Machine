@@ -170,10 +170,6 @@ h2 {
 	vertical-align: middle;
 }
 
-figcaption {
-	display: inline;
-	font-size: 9px;
-}
 
 .get_drink_pay {
 	float: right;
@@ -247,7 +243,7 @@ margin-bottom: 1px;
 	box-sizing: border-box;
 }
 
-.show_change {
+.calc_show_change {
 	/* width: 200px; */
 	/* height: 33px; */
 	background: #EAE8FE;
@@ -255,39 +251,34 @@ margin-bottom: 1px;
 	text-align: right;
 }
 
-.show_change::before {
+.calc_show_change::before {
 	content: "잔액 :";
 	float: left;
 	margin-left: 10px;
 }
 
-.show_change::after {
+.calc_show_change::after {
 	/* position: absolute; */
 	content: "원";
 	float: right;
 	margin-right: 10px;	
 }
 
-.calc * {
-	border-radius: 6px;
-	font-weight: 500;
-	font-size: 14px;
-} 
-.calc :not(.show_change, .btn_get) {
-	border: 1px solid #cdcaca;
-}
 
-.button_chage {
+
+
+
+.calc_button_chage {
 	background-color: #fff;
 	/* width: 94px; */
 	/* height: 33px; */
 }
 
-.input_money {
+.calc_input_money {
 	/* width: 200px; */
 	/* height: 33px; */
 }
-.input_money::placeholder {
+.calc_input_money::placeholder {
 	content: "입금액 입력";
 	/* display: block; */
 	color: #cdcaca;
@@ -322,4 +313,44 @@ margin-bottom: 1px;
 	height: 46px;
 	background-color: #fff;
 	line-height: 46px;
+}
+
+.calc_show_change, .calc_input_money, .bottom_list_drink, .selected_drink, .btn   {
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.calc_fig {
+	float: left;
+}
+
+
+figcaption {
+	display: inline;
+	font-size: 9px;
+}
+
+.calc_img {
+	vertical-align: middle;
+	width: 18px;
+	height: 33px;
+}
+
+
+.btn, .calc_input_money, .bottom_list_drink  {
+	border: 1px solid #cdcaca;
+}
+
+.calc_selected_list_count {
+    margin-top: 2px;
+    float: right;
+    box-sizing: border-box;
+    line-height: 100%;
+    width: 30px;
+    height: 30px;
+    /* left: 238px; */
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    background-color: #fff;
 }

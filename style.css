@@ -105,7 +105,7 @@ body {
 .get_drink_section {
 	box-sizing: border-box;
 	width: 100%;
-	height: 100%;
+	height: 465px;
 	margin: 0 auto;
 	padding: 20px;
 	overflow: hidden;
@@ -117,7 +117,7 @@ body {
 	background-color: #EAE8FE;
 	margin: 0 auto;
 	padding: 20px;
-	/* height: 100%; */
+	height: 315px;
 	border-radius: 5px;
 	vertical-align: middle;
 	overflow: scroll;
@@ -173,6 +173,11 @@ h2 {
 figcaption {
 	display: inline;
 	font-size: 9px;
+}
+
+.get_drink_pay {
+	float: right;
+	padding: 10px 0;
 }
 
 /* left */

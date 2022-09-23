@@ -27,19 +27,21 @@ button:hover {
 
 
 .get_drink::-webkit-scrollbar {
-    width: 7px;
+    width: 19px;
+    height: 100%;
   }
 .get_drink::-webkit-scrollbar-thumb {
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
     background-clip: padding-box;
-    border: 3px solid transparent;
-	/* height: 40%; */
+    border: 7px solid transparent;
+    /* height: 30px; */
+
 
 
   }
   .get_drink::-webkit-scrollbar-track {
-    background-color: #fff;
+    background-color: #EAE8FE;
+    /* background-color: #fff; */
     border-radius: 10px;
-	height: 100px;
   }

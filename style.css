@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
 button {
 	padding: 0;
 }
 
 body {
+	font-family: 'Noto Sans KR', sans-serif;
+
 	background-color: #EAE8FE;
-	font-size: 10px;
+	font-size: 62.5%;
 }
 
 .sr_out {
@@ -26,6 +30,7 @@ body {
 	margin: 0 auto;
 	box-sizing: border-box;
 	flex-wrap: wrap;
+
 }
 
 .img_title {
@@ -58,7 +63,9 @@ body {
 }
 
 .japangi_right {
-	/* margin: 0 18px; */
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-between; */
 	box-sizing: border-box;
 	background-color: #fff;
 	width: 360px;
@@ -83,6 +90,7 @@ body {
 
 }
 .txt_deposit {
+	font-size: 1.4em;
 	width: 306px;
 	height: 32px;
 	background-color: #EAE8FE;
@@ -107,29 +115,23 @@ body {
 	width: 100%;
 	height: 465px;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 41px 20px;
 	overflow: hidden;
 	background-color: #fff;
-	/* background-color: pink; */
 }
 
 .get_drink {
 	background-color: #EAE8FE;
 	margin: 0 auto;
-	padding: 20px;
-	height: 315px;
+	padding: 12px;
 	border-radius: 5px;
 	vertical-align: middle;
 	overflow: scroll;
 	overflow-x: hidden;
+	height: 318px;
+	box-sizing: border-box;
 }
 
-.get_drink li {
-	margin: 0 auto;
-	width: 276px;
-	height: 46px;
-	background-color: #fff;
-}
 
 .get_drink li + li {
 	margin-top: 5px;
@@ -138,13 +140,17 @@ body {
 h2 {
 	width: 76px;
 	margin: 10px auto;
+	font-weight: 700;
+	font-size: 1.4em;
+
 }
 
 .get_drink_list {
-	position: relative;
-	height: 100%;
 	padding: 5px;
 	box-sizing: border-box;
+	margin: 0 auto;
+	height: 46px;
+	background-color: #fff;
 }
 
 .btn_get_drink_count {
@@ -158,6 +164,9 @@ h2 {
 	border: 1px solid #BDBDBD;
 	border-radius: 5px;
 	background-color: #fff;
+	font-size: 1.4em;
+	font-family: 'Noto Sans KR', sans-serif;
+
 }
 
 .get_drink_fig {
@@ -174,6 +183,7 @@ h2 {
 .get_drink_pay {
 	float: right;
 	padding: 10px 0;
+	font-size: 1.2em;
 }
 
 /* left */
@@ -183,7 +193,7 @@ h2 {
 	right: 0;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: 130px;
 	gap: 12px;
 	margin-bottom: 20px;
 }
@@ -205,8 +215,7 @@ margin-bottom: 1px;
 }
 
 .drink_name {
-	font-weight: 500;
-	font-size: 9px;
+	font-size: 0.9em;
 	line-height: 13px;
 	margin-bottom: 1px;
 }
@@ -214,7 +223,7 @@ margin-bottom: 1px;
 .price {
 	display: block;
 	margin: 4px auto;
-	padding: 7px 15px;
+	padding: 5px 15px;
 	text-align: center;
 	box-sizing: border-box;
 	width: 70px;
@@ -222,7 +231,7 @@ margin-bottom: 1px;
 	border-radius: 50px;
 	background-color: #6327FE;
 	color: #fff;
-	font-size: 12px;
+	font-size: 1.2em;
 }
 
 .price::after {
@@ -249,6 +258,8 @@ margin-bottom: 1px;
 	background: #EAE8FE;
 	line-height: 33px;
 	text-align: right;
+	font-size: 1.4em;
+
 }
 
 .calc_show_change::before {
@@ -261,7 +272,7 @@ margin-bottom: 1px;
 	/* position: absolute; */
 	content: "원";
 	float: right;
-	margin-right: 10px;	
+	margin-right: 10px;
 }
 
 
@@ -275,6 +286,10 @@ margin-bottom: 1px;
 }
 
 .calc_input_money {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 1.2em;
+
+
 	/* width: 200px; */
 	/* height: 33px; */
 }
@@ -282,9 +297,8 @@ margin-bottom: 1px;
 	content: "입금액 입력";
 	/* display: block; */
 	color: #cdcaca;
-	font-size: 13px;
-	font-weight: 500;
 	/* margin-left: 10px; */
+	
 }
 
 .btn_get {
@@ -295,6 +309,9 @@ margin-bottom: 1px;
 
 .btn {
 	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+	font-size: 1.3em;
+	font-family: 'Noto Sans KR', sans-serif;
+
 }
 
 .bottom_list_drink {
@@ -306,51 +323,29 @@ margin-bottom: 1px;
 	overflow-x: hidden;
 }
 
-.selected_drink {
-	line-height: 30px;
-	text-align: center;
-	box-sizing: border-box;
-	height: 46px;
-	background-color: #fff;
-	line-height: 46px;
-}
 
-.calc_show_change, .calc_input_money, .bottom_list_drink, .selected_drink, .btn   {
+
+.calc_show_change, .calc_input_money, .btn, .get_drink  {
 	border-radius: 6px;
-	font-weight: 500;
-	font-size: 14px;
-}
-
-.calc_fig {
-	float: left;
 }
 
 
+/* 클래스로 바꾸기 */
 figcaption {
 	display: inline;
 	font-size: 9px;
 }
 
-.calc_img {
-	vertical-align: middle;
-	width: 18px;
-	height: 33px;
-}
 
-
-.btn, .calc_input_money, .bottom_list_drink  {
+.btn, .calc_input_money {
 	border: 1px solid #cdcaca;
 }
 
-.calc_selected_list_count {
-    margin-top: 2px;
-    float: right;
-    box-sizing: border-box;
-    line-height: 100%;
-    width: 30px;
-    height: 30px;
-    /* left: 238px; */
-    border: 1px solid #BDBDBD;
-    border-radius: 5px;
-    background-color: #fff;
+.calc_get_drink {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.calc_get_drink li {
+	width: 170px;
 }

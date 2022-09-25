@@ -9,39 +9,22 @@ button:hover {
 }
 
 /* 스크롤바 */
-.bottom_list_drink::-webkit-scrollbar {
-    width: 10px;
-  }
-  .bottom_list_drink::-webkit-scrollbar-thumb {
-    background-color: #fff;
-    border-radius: 5px;
-    background-clip: padding-box;
-    border: 3px solid transparent;
-	height: 79px;
-
-  }
-  .bottom_list_drink::-webkit-scrollbar-track {
-    background-color: #EAE8FE;
-    border-radius: 10px;
-  }
-
-
 .get_drink::-webkit-scrollbar {
-    width: 19px;
-    height: 100%;
+    width: 12px;
+    height: 10px;
   }
 .get_drink::-webkit-scrollbar-thumb {
     background-color: #fff;
     border-radius: 5px;
     background-clip: padding-box;
-    border: 7px solid transparent;
-    /* height: 30px; */
+    border: 4px solid transparent;
 
 
 
   }
   .get_drink::-webkit-scrollbar-track {
     background-color: #EAE8FE;
+    /* background-color: #e91e63; */
     /* background-color: #fff; */
     border-radius: 10px;
   }

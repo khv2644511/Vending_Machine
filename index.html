@@ -7,22 +7,20 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./pseudo.css">
-
     <title>Vending Machine</title>
 </head>
 <body>
-    <img src="/img/logo.png" alt="코카콜라" class="img_title">
-
+        <img src="/img/logo.png" alt="코카콜라" class="img_title">
         <!-- 자판기 -->
         <section class="container">
 
             <h1 class="sr_out">Vending Machine</h1>
             <div class="japangi_left japangi">
                 <ul class="list_drink">
-                    <li class="drink">
+                    <li class="drink" id="select_drink">
                         <img src="./img/Original_Cola.svg" alt="오리지널 콜라" class="drink_img"> 
                         <p class="drink_name">Original_Cola</p>
-                        <p class="price">1000</p>
+                        <p id="price" class="price">1000</p>
                     </li>
                     <li class="drink">
                         <img src="./img/Violet_Cola.svg" alt="바이올렛 콜라" class="drink_img">
@@ -53,10 +51,10 @@
                     </li>
                 </ul>
                 <div class="calc">
-                    <p class="calc_show_change">1,000</p>
+                    <p id="show_change" class="calc_show_change">0</p>
                     <button class="calc_button_chage btn">거스름돈 반환</button>
-                    <input class="calc_input_money" type="text" placeholder="입금액 입력" required>
-                    <button class="btn_money btn">입금</button>
+                    <input id="input_money" class="calc_input_money" type="text" placeholder="입금액 입력" required>
+                    <button id='input_money_btn'  class="btn_money btn">입금</button>
                     <!-- 재사용하기 get_drink_list-->
                     <ul class="calc_get_drink get_drink">
                         <li class="get_drink_list">
@@ -182,7 +180,6 @@
             </div>
         </section>
 
-        
-
+    <script src="./main.js"></script> 
 </body>
 </html>

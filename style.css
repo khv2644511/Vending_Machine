@@ -33,6 +33,8 @@ body {
 
 }
 
+
+
 .img_title {
 	/* position: absolute; */
 	/* align-self:stretch; */
@@ -43,6 +45,7 @@ body {
 	width: 386px;
 	height: 164px;
 	flex-grow: 1;
+	height: auto;
 }
 
 .japangi {
@@ -193,7 +196,7 @@ h2 {
 	right: 0;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 130px;
+	grid-template-rows: 130px 130px;
 	gap: 12px;
 	margin-bottom: 20px;
 }
@@ -217,7 +220,7 @@ margin-bottom: 1px;
 .drink_name {
 	font-size: 0.9em;
 	line-height: 13px;
-	margin-bottom: 1px;
+	margin: 3px;
 }
 
 .price {
@@ -348,4 +351,13 @@ figcaption {
 }
 .calc_get_drink li {
 	width: 170px;
+}
+
+@media screen and (max-width: 600px){
+
+	.img_title {
+		width: 166px;
+		height: 71px;
+
+	}
 }

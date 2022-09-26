@@ -1,363 +1,393 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
 
 button {
-	padding: 0;
+  padding: 0;
 }
 
 body {
-	font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 
-	background-color: #EAE8FE;
-	font-size: 62.5%;
+  background-color: #eae8fe;
+  font-size: 62.5%;
 }
 
 .sr_out {
-	position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
 }
 
 .container {
-	display: flex;
-	position: relative;
-	/* flex-direction: column; */
-	/* flex-direction: row; */
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	box-sizing: border-box;
-	flex-wrap: wrap;
-
+  display: flex;
+  position: relative;
+  /* flex-direction: column; */
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
-
-
+.img_container {
+  max-width: 386px;
+  height: 164px;
+  margin: 0 auto 80px;
+}
 .img_title {
-	/* position: absolute; */
-	/* align-self:stretch; */
-	display: block;
-	margin: 0 auto 80px;
-	left: 0;
-	right: 0;
-	width: 386px;
-	height: 164px;
-	flex-grow: 1;
-	height: auto;
+  /* position: absolute; */
+  /* align-self:stretch; */
+  display: block;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  height: auto;
 }
 
 .japangi {
-	flex-shrink: 0;
-	/* background-color:aqua; */
+  flex-shrink: 0;
+  /* background-color:aqua; */
 }
 
 .japangi_left {
-	/* position: relative; */
-	margin: 0 18px;
+  /* position: relative; */
+  margin: 0 18px;
 
-	padding: 31px 27px;
-	box-sizing: border-box;
-	width: 360px;
-	height: 545px;
-	background-color: #fff;
-	overflow: hidden;
+  padding: 31px 27px;
+  box-sizing: border-box;
+  width: 360px;
+  height: 545px;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .japangi_right {
-	/* display: flex;
+  /* display: flex;
 	flex-direction: column;
 	justify-content: space-between; */
-	box-sizing: border-box;
-	background-color: #fff;
-	width: 360px;
-	height: 545px;
-	display: block;
-	background-color: #EAE8FE;
-	/* background-color: yellow; */
-	overflow: hidden;
-	position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 360px;
+  height: 545px;
+  display: block;
+  background-color: #eae8fe;
+  /* background-color: yellow; */
+  overflow: hidden;
+  position: relative;
 }
 
 .japangi_deposit {
-	border: 1px solid #fff;
-	right: 0;
-	background-color: #fff;
-	width: 100%;
-	height: 50px;
-	margin-bottom: 30px;
-	line-height: 32px;
-	padding: 9px 27px;
-	box-sizing: border-box;
-
+  border: 1px solid #fff;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  line-height: 32px;
+  padding: 9px 27px;
+  box-sizing: border-box;
 }
 .txt_deposit {
-	font-size: 1.4em;
-	width: 306px;
-	height: 32px;
-	background-color: #EAE8FE;
-	border-radius: 5px;
-	float: left;
-	padding: 0 10px;
-	box-sizing: border-box;
+  font-size: 1.4em;
+  width: 306px;
+  height: 32px;
+  background-color: #eae8fe;
+  border-radius: 5px;
+  float: left;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .deposit {
-	float: right;
+  float: right;
 }
 
 .deposit::after {
-	content: "원";
-	display: inline-block;
-	/* margin: 0 5px; */
+  content: "원";
+  display: inline-block;
+  /* margin: 0 5px; */
 }
 
 .get_drink_section {
-	box-sizing: border-box;
-	width: 100%;
-	height: 465px;
-	margin: 0 auto;
-	padding: 41px 20px;
-	overflow: hidden;
-	background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  height: 465px;
+  margin: 0 auto;
+  padding: 41px 20px;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 .get_drink {
-	background-color: #EAE8FE;
-	margin: 0 auto;
-	padding: 12px;
-	border-radius: 5px;
-	vertical-align: middle;
-	overflow: scroll;
-	overflow-x: hidden;
-	height: 318px;
-	box-sizing: border-box;
+  background-color: #eae8fe;
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 5px;
+  vertical-align: middle;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 318px;
+  box-sizing: border-box;
 }
 
-
 .get_drink li + li {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 
 h2 {
-	width: 76px;
-	margin: 10px auto;
-	font-weight: 700;
-	font-size: 1.4em;
-
+  width: 76px;
+  margin: 10px auto;
+  font-weight: 700;
+  font-size: 1.4em;
 }
 
 .get_drink_list {
-	padding: 5px;
-	box-sizing: border-box;
-	margin: 0 auto;
-	height: 46px;
-	background-color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 46px;
+  background-color: #fff;
 }
 
 .btn_get_drink_count {
-	margin-top: 2px;
-	float: right;
-	box-sizing: border-box;
-	line-height: 100%;
-	width: 30px;
-	height: 30px;
-	/* left: 238px; */
-	border: 1px solid #BDBDBD;
-	border-radius: 5px;
-	background-color: #fff;
-	font-size: 1.4em;
-	font-family: 'Noto Sans KR', sans-serif;
-
+  margin-top: 2px;
+  float: right;
+  box-sizing: border-box;
+  line-height: 100%;
+  width: 30px;
+  height: 30px;
+  /* left: 238px; */
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1.4em;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .get_drink_fig {
-	float: left;
+  float: left;
 }
 
 .get_drink_img {
-	width: 20px;
-	height: 100%;
-	vertical-align: middle;
+  width: 20px;
+  height: 100%;
+  vertical-align: middle;
 }
 
-
 .get_drink_pay {
-	float: right;
-	padding: 10px 0;
-	font-size: 1.2em;
+  float: right;
+  padding: 10px 0;
+  font-size: 1.2em;
 }
 
 /* left */
 .list_drink {
-	/* position: absolute; */
-	left: 0;
-	right: 0;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 130px 130px;
-	gap: 12px;
-	margin-bottom: 20px;
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 130px 130px;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+// .sold_out {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
+
+#sold_out::after {
+  content: "";
+  display: block;
+  background-image: url("./img/Sold-out.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  width: 80%;
+  height: 40%;
+  //   z-index: 10;
+}
+#sold_out::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
 }
 
 .drink {
-	position: relative;
-	text-align: center;
-	box-sizing: border-box;
-	border-radius: 10px;
-	border: 1px solid #cdcaca;
-	filter: drop-shadow(0px 0px 2px rgba(129, 124, 124, 0.4));
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #cdcaca;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .drink_img {
-margin-top: 10px;
-margin-bottom: 1px;
+  z-index: 1;
+  margin-top: 10px;
+  margin-bottom: 1px;
 }
 
 .drink_name {
-	font-size: 0.9em;
-	line-height: 13px;
-	margin: 3px;
+  font-size: 0.9em;
+  line-height: 13px;
+  margin: 3px;
 }
 
 .price {
-	display: block;
-	margin: 4px auto;
-	padding: 5px 15px;
-	text-align: center;
-	box-sizing: border-box;
-	width: 70px;
-	height: 22px;
-	border-radius: 50px;
-	background-color: #6327FE;
-	color: #fff;
-	font-size: 1.2em;
+  display: block;
+  margin: 4px auto;
+  padding: 5px 15px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 70px;
+  height: 22px;
+  border-radius: 50px;
+  background-color: #6327fe;
+  color: #fff;
+  font-size: 1.2em;
 }
 
 .price::after {
-	content: "원";
-	color: #fff;
+  content: "원";
+  color: #fff;
 }
 
 .calc {
-	/* position: absolute; */
-	left: 0;
-	top: 310px;
-	display: grid;
-	grid-template-columns: 200px 1fr;
-	grid-template-rows: repeat(2, 1fr) 3fr;
-	gap: 12px;
-	overflow: hidden;
-	height: 40%;
-	box-sizing: border-box;
+  /* position: absolute; */
+  left: 0;
+  top: 310px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: repeat(2, 1fr) 3fr;
+  gap: 12px;
+  overflow: hidden;
+  height: 40%;
+  box-sizing: border-box;
 }
 
 .calc_show_change {
-	/* width: 200px; */
-	/* height: 33px; */
-	background: #EAE8FE;
-	line-height: 33px;
-	text-align: right;
-	font-size: 1.4em;
-
+  /* width: 200px; */
+  /* height: 33px; */
+  background: #eae8fe;
+  line-height: 33px;
+  text-align: right;
+  font-size: 1.4em;
 }
 
 .calc_show_change::before {
-	content: "잔액 :";
-	float: left;
-	margin-left: 10px;
+  content: "잔액 :";
+  float: left;
+  margin-left: 10px;
 }
 
 .calc_show_change::after {
-	/* position: absolute; */
-	content: "원";
-	float: right;
-	margin-right: 10px;
+  /* position: absolute; */
+  content: "원";
+  float: right;
+  margin-right: 10px;
 }
 
-
-
-
-
 .calc_button_chage {
-	background-color: #fff;
-	/* width: 94px; */
-	/* height: 33px; */
+  background-color: #fff;
+  /* width: 94px; */
+  /* height: 33px; */
 }
 
 .calc_input_money {
-	font-family: 'Noto Sans KR', sans-serif;
-	font-size: 1.2em;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2em;
 
-
-	/* width: 200px; */
-	/* height: 33px; */
+  /* width: 200px; */
+  /* height: 33px; */
 }
 .calc_input_money::placeholder {
-	content: "입금액 입력";
-	/* display: block; */
-	color: #cdcaca;
-	/* margin-left: 10px; */
-	
+  content: "입금액 입력";
+  /* display: block; */
+  color: #cdcaca;
+  /* margin-left: 10px; */
 }
 
 .btn_get {
-	border: none;
-	background-color: #6327FE;
-	color: #fff;
+  border: none;
+  background-color: #6327fe;
+  color: #fff;
 }
 
 .btn {
-	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
-	font-size: 1.3em;
-	font-family: 'Noto Sans KR', sans-serif;
-
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.3em;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .bottom_list_drink {
-	position: relative;
-	box-sizing: border-box;
-	padding: 20px;
-	background-color: #EAE8FE;
-	overflow: scroll;
-	overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #eae8fe;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-
-
-.calc_show_change, .calc_input_money, .btn, .get_drink  {
-	border-radius: 6px;
+.calc_show_change,
+.calc_input_money,
+.btn,
+.get_drink {
+  border-radius: 6px;
 }
-
 
 /* 클래스로 바꾸기 */
 figcaption {
-	display: inline;
-	font-size: 9px;
+  display: inline;
+  font-size: 9px;
 }
 
-
-.btn, .calc_input_money {
-	border: 1px solid #cdcaca;
+.btn,
+.calc_input_money {
+  border: 1px solid #cdcaca;
 }
 
 .calc_get_drink {
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 .calc_get_drink li {
-	width: 170px;
+  width: 170px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px) {
+}
 
-	.img_title {
-		width: 166px;
-		height: 71px;
-
-	}
+@media screen and (max-width: 366px) {
+  .img_title {
+    width: 100%;
+    height: 75px;
+  }
+  .img_container {
+    width: 166px;
+    height: 100%;
+    margin: 0 auto 18px;
+  }
+  body,
+  .japangi {
+    background-color: #fff;
+  }
+  .japangi_deposit {
+    margin: 0;
+  }
 }

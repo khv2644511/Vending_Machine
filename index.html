@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,177 +10,170 @@
     <link rel="stylesheet" href="./pseudo.css">
     <title>Vending Machine</title>
 </head>
-<body>
-        <img src="/img/logo.png" alt="코카콜라" class="img_title">
-        <!-- 자판기 -->
-        <section class="container">
 
-            <h1 class="sr_out">Vending Machine</h1>
-            <div class="japangi_left japangi">
-                <ul class="list_drink">
-                    <li class="drink" id="select_drink">
-                        <img src="./img/Original_Cola.svg" alt="오리지널 콜라" class="drink_img"> 
-                        <p class="drink_name">Original_Cola</p>
-                        <p id="price" class="price">1000</p>
+<body>
+    <div class="img_container">
+        <img src="/img/logo.png" alt="코카콜라" class="img_title">
+    </div>
+    <!-- 자판기 -->
+    <section class="container">
+
+        <h1 class="sr_out">Vending Machine</h1>
+        <div class="japangi_left japangi">
+            <ul class="list_drink" id="select_drink">
+                <li class="drink">
+                    <img src="./img/Original_Cola.svg" alt="오리지널 콜라" class="drink_img">
+                    <p class="drink_name">Original_Cola</p>
+                    <p id="price" class="price">1000</p>
+                </li>
+                <li class="drink" id="sold_out">
+                    <img src="./img/Violet_Cola.svg" alt="바이올렛 콜라" class="drink_img">
+                    <p class="drink_name">Violet Cola</p>
+                    <!-- <img src="/img/Sold-out.svg" alt="솔드아웃" class="sold_out"> -->
+                    <!-- sold_out -->
+                    <p id="price" class="price">1000</p>
+                </li>
+                <li class="drink">
+                    <img src="./img/Yellow_Cola.svg" alt="노란색 콜라" class="drink_img">
+                    <p class="drink_name">Yellow_Cola</p>
+                    <p id="price" class="price">1000</p>
+                </li>
+                <li class="drink">
+                    <img src="./img/Cool_Cola.svg" alt="쿨 콜라" class="drink_img">
+                    <p class="drink_name">Cool_Cola
+                    <p>
+                    <p id="price" class="price">1000</p>
+                </li>
+                <li class="drink">
+                    <img src="./img/Green_Cola.svg" alt="그린 콜라" class="drink_img">
+                    <p class="drink_name">Green_Cola</p>
+                    <p id="price" class="price">1000</p>
+                </li>
+                <li class="drink">
+                    <img src="./img/Orange_Cola.svg" alt="오렌지 콜라" class="drink_img">
+                    <p class="drink_name">Orange_Cola
+                    <p>
+                    <p id="price" class="price">1000</p>
+                </li>
+            </ul>
+            <div class="calc">
+                <p id="show_change" class="calc_show_change">0</p>
+                <button class="calc_button_chage btn">거스름돈 반환</button>
+                <input id="input_money" class="calc_input_money" type="text" placeholder="입금액 입력" required>
+                <button id='input_money_btn' class="btn_money btn">입금</button>
+                <!-- 재사용하기 get_drink_list-->
+                <ul class="calc_get_drink get_drink">
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Original_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption>Original_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
                     </li>
-                    <li class="drink">
-                        <img src="./img/Violet_Cola.svg" alt="바이올렛 콜라" class="drink_img">
-                        <p class="drink_name">Violet Cola</p>
-                        <!-- <img src="/img/Sold-out.svg" alt="솔드아웃"> -->
-                        <!-- sold_out -->
-                        <p class="price">1000</p>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Green_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption>Green_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
                     </li>
-                    <li class="drink">
-                        <img src="./img/Yellow_Cola.svg" alt="노란색 콜라" class="drink_img"> 
-                        <p class="drink_name">Yellow_Cola</p>    
-                        <p class="price">1000</p>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Orange_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption>Orange_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
                     </li>
-                    <li class="drink">
-                        <img src="./img/Cool_Cola.svg" alt="쿨 콜라" class="drink_img">
-                        <p class="drink_name">Cool_Cola<p>   
-                        <p class="price">1000</p>
-                    </li>
-                    <li class="drink">
-                        <img src="./img/Green_Cola.svg" alt="그린 콜라" class="drink_img">
-                        <p class="drink_name">Green_Cola</p>     
-                        <p class="price">1000</p>
-                    </li>
-                    <li class="drink">
-                        <img src="./img/Orange_Cola.svg" alt="오렌지 콜라" class="drink_img"> 
-                        <p class="drink_name">Orange_Cola<p>       
-                        <p class="price">1000</p>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Violet_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption> Violet_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
                     </li>
                 </ul>
-                <div class="calc">
-                    <p id="show_change" class="calc_show_change">0</p>
-                    <button class="calc_button_chage btn">거스름돈 반환</button>
-                    <input id="input_money" class="calc_input_money" type="text" placeholder="입금액 입력" required>
-                    <button id='input_money_btn'  class="btn_money btn">입금</button>
-                    <!-- 재사용하기 get_drink_list-->
-                    <ul class="calc_get_drink get_drink">
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Original_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption>Original_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Green_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption>Green_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Orange_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption>Orange_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Violet_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption> Violet_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                    </ul>
-                    <button class="btn_get btn">획득</button>
+                <button class="btn_get btn">획득</button>
+            </div>
+        </div>
+        <div class="japangi_right japangi">
+            <div class="japangi_deposit">
+                <div class="txt_deposit">소지금 :
+                    <span class="deposit">25,000</span>
                 </div>
             </div>
-            <div class="japangi_right japangi">
-                <div class="japangi_deposit">
-                    <div class="txt_deposit">소지금 :
-                        <span class="deposit">25,000</span>
-                    </div>
-                </div>
-                <div class="get_drink_section">
-                    <h2>획득한 음료</h2>
-                    <ul class="get_drink">
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Original_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption>Original_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Green_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption>Green_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Orange_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption>Orange_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Violet_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption> Violet_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Violet_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption> Violet_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Violet_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption> Violet_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Violet_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption> Violet_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Violet_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption> Violet_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                        <li class="get_drink_list">
-                            <figure class="get_drink_fig">
-                                <img src="./img/Violet_Cola.svg"
-                                     alt="Elephant at sunset" class="get_drink_img">
-                                <figcaption> Violet_Cola</figcaption>
-                            </figure>
-                            <button class="btn_get_drink_count">1</button>
-                        </li>
-                    </ul>
-                    <p class="get_drink_pay">총금액 : 9,000원</p>
-                </div>
+            <div class="get_drink_section">
+                <h2>획득한 음료</h2>
+                <ul class="get_drink">
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Original_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption>Original_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
+                    </li>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Green_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption>Green_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
+                    </li>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Orange_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption>Orange_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
+                    </li>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Violet_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption> Violet_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
+                    </li>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Violet_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption> Violet_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
+                    </li>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Violet_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption> Violet_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
+                    </li>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Violet_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption> Violet_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
+                    </li>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Violet_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption> Violet_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
+                    </li>
+                    <li class="get_drink_list">
+                        <figure class="get_drink_fig">
+                            <img src="./img/Violet_Cola.svg" alt="Elephant at sunset" class="get_drink_img">
+                            <figcaption> Violet_Cola</figcaption>
+                        </figure>
+                        <button class="btn_get_drink_count">1</button>
+                    </li>
+                </ul>
+                <p class="get_drink_pay">총금액 : 9,000원</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-    <script src="./main.js"></script> 
+    <script src="./main.js"></script>
 </body>
+
 </html>

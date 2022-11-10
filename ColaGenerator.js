@@ -1,4 +1,4 @@
-/** @format */
+// /** @format */
 
 async function loadData(callback) {
   const response = await fetch("./item.json"); //await는 async 함수와만 사용할 수 있음
@@ -14,35 +14,28 @@ async function loadData(callback) {
   }
 }
 
-// const itemList = document.querySelector("#select_drink");
+const itemList = document.querySelector("#select_drink");
 
-// const colaFactory = (data) => {
-//   console.log(data);
-//   const docFrag = document.createDocumentFragment();
-//   data.forEach((el) => {
-//     console.log(el.name);
-//     const item = document.createElement("li");
-//     const itemTemplate = `
-//       <button type="button" class="btn-item" data-item="${el.name}" data-count="${el.count}" data-price="${el.cost}" data-img="${el.img}">
-//           <img src="./img/${el.img}" alt="" class="img-item">
-//           <strong class="tit-item">${el.name}</strong>
-//           <span class="txt-price">${el.cost}원</span>
-//       </button>
-//       `;
-//     item.innerHTML = itemTemplate;
-//     docFrag.appendChild(item);
-//   });
-//   itemList.appendChild(docFrag);
-// };
+const colaFactory = (data) => {
+  console.log(data);
+  const docFrag = document.createDocumentFragment();
+  data.forEach((el) => {
+    console.log(el.name);
+    const item = document.createElement("li");
+    // item.className.add = "drink";
+    item.setAttribute("class", "drink");
 
-// loadData();
+    const itemTemplate = `
+      <button type="button" class="btn-item" data-item="${el.name}" data-count="${el.count}" data-price="${el.cost}" data-img="${el.img}">
+        <img src="./img/${el.img}" alt="${el.name}" class="drink_img"/>
+        <p class="drink_name">${el.name}</p>
+        <p id="price" class="price">${el.cost}</p>
+      </button>
+      `;
+    item.innerHTML = itemTemplate;
+    docFrag.appendChild(item);
+  });
+  itemList.appendChild(docFrag);
+};
 
-// <li class="drink Orange">
-// <img
-//   src="./img/Orange_Cola.svg"
-//   alt="오렌지 콜라"
-//   class="drink_img"
-// />
-// <p class="drink_name">Orange_Cola</p>
-// <p id="price" class="price">1000</p>
-// </li>
+loadData();
